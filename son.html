@@ -1,70 +1,439 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <style>
-        .navbar {
-            background-color: #333;
-            overflow: hidden;
-        }
-        
-        .navbar a {
-            float: left;
-            display: block;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-        
-        .navbar a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-        
-        .navbar .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-        
-        .navbar .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: red;
-            min-width: 160px;
-            z-index: 1;
-            top: 100%;
-        }
-        
-        .navbar .dropdown-content a {
-            color: #f2f2f2;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            text-align: left;
-        }
-        
-        .navbar .dropdown:hover .dropdown-content {
-            display: block;
-        }
-        
-        .navbar .dropdown-content a:hover {
-            background-color: yellow;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Tropea</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" type="text/css" href="sona.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-jc1vckdwsjD3cVHBDiO9j4DnD8HZRKfkbII6jUvL2p5T+9T5mPl+jT2T8NYCeqPOt5KmPH2yfpZnyuH7MjLQZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
 </head>
 <body>
-    <div class="navbar">
-        <a href="#home">Home</a>
-        <a href="#about">About Us</a>
-        <div class="dropdown">
-            <a href="#contact">Contact Us</a>
-            <div class="dropdown-content">
-                <a href="#email">Email</a>
-                <a href="#call">Call</a>
-                <a href="#whatsapp">WhatsApp</a>
+
+<!-- Banner Section -->
+<section class="banner">
+    <div class="banner-overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="brand-info sticky-top">
+                    <span class="number">(408) 329-9604</span>
+                    <span class="brand"><img class="logo" src="logo.webp" alt="Zaqst Logo"></span>
+                    <span class="address">260 S Sunnyvale Ave #2 <br>
+                    Sunnyvale, CA 94086, US</span>
+                </p>
             </div>
         </div>
-        <a href="#accounts">Accounts</a>
     </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Logo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="headi">
+        <h2>Supporting Spinal Health.</h2>
+        <div class="line"></div>
+        <div class="hea">
+            <h3>You've only got one spine. Take great care of it with supportive chiropractic care.</h3>
+        </div>
+    </div>
+    <button class="custom-button">REQUEST APPOINTMENT</button>
+</section>
+<section class="second-section" >
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <img src="img.webp" alt="Content Image" class="content-image imgsec2" style="height:413px">
+            </div>
+            <div class="col-md-7">
+                <div class="content-text">
+                    <h2 class="sec2heading"> Welcome to Tropea <br> Chiropractic Inc in Sunnyvale, CA</h2>
+                    <h4 class="sec2subheading">Your Chiropractor in Sunnyvale, CA.</h4>
+                    <p style="text-align: left; margin-top: 20px;">Call&nbsp;
+                        <a href="" class="piwik_ignore">(408) 329-9604</a>
+                        &nbsp;today!
+                    </p>
+                    <p class="sec2para">At Tropea Chiropractic Inc, we are fully dedicated to providing chiropractic solutions to address your unique needs, whether you are experiencing back pain, neck pain, headaches, or even muscle tightness and tension. Dr. Tropea welcomes you to our practice where we strive to make patients feel at home. This personal care is why people throughout the Sunnyvale area come to Tropea Chiropractic Inc.</p>
+                </div>
+            </div>
+        </div>
+        <button class="custom-button" style="position: relative;">MEET OUR DOCTOR</button>
+        <div class="row" style="padding-top: 80px;">
+            <div class="col-md-5">
+                <div class="image-grid">
+                    <!-- Image Grid Content Here -->
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="text-grid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+        <div class="row" >
+            <div class="col-md-4 clrbth border-right">
+                <div class="box " >
+                    <i class="fa-solid fa-car  boxicon">
+                    <span class="icontext">   <p class="box-text">Spinal Adjustment</p></span></i>
+                </div>
+            </div>
+            <div class="col-md-4 clrbth border-right">
+                <div class="box ">
+                    <i class="fa-solid fa-car  boxicon">
+                    <span class="icontext">   <p class="box-text">Spinal Adjustment</p></span></i>
+                </div>
+            </div>
+            <div class="col-md-4 clrbth border-right">
+                <div class="box ">
+                    <i class="fa-solid fa-car  boxicon">
+                    <span class="icontext">   <p class="box-text">Spinal Adjustment</p></span></i>
+                </div>
+            </div>
+        </div>
+    
+
+    <div class="container">
+        <div class="row" style="padding-top: 50px;">
+            <div class="col-md-7">
+                <div class="content-text">
+                    <h2 class="sec3heading"> A Second Opinion You Can  <br>Trust</h2>
+                    <p class="sec3para" >Many of our patients come to us on strong pain medication seeking a way to avoid dangerous          surgeries.       In most cases, we can relieve your pain and restore mobility to pre-injury levels.
+                    Every case is unique and starts with a full consultation; call us today to schedule an appointment.
+                    </p>
+                    <button class="custom-button" >WATCH OUR VIDEO</button>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <img src="blade2.jpg.webp" alt="Content Image" class="content-image imgsec3" style="height:413px">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5">
+                <div class="image-grid">
+                    <!-- Image Grid Content Here -->
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="text-grid">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-third">
+    
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-12">
+          <div class="box2">
+            <button class="custom-button">SPECIAL OFFER FOR <BR> NEW PATIENTS ONLY</button>
+          </div>
+        </div>
+      </div>
+   
+  </section>
+
+  <section class="section4">
+    <div class="container">
+      <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="2000">
+        <div class="carousel-inner" >
+          <div class="carousel-item active" >
+            <div class="row"style="margin-top: 90px;" >
+              <div class="col-md-4">
+                </html> <img src="img/carousel1.webp" class="d-block w-100" alt="Image 1">
+            </div>
+              <div class="col-md-4">
+                </html> <img src="img/carousel2.webp" class="d-block w-100" alt="Image 1">
+
+              </div>
+              <div class="col-md-4">
+                </html> <img src="img/carousel3.webp" class="d-block w-100" alt="Image 1">
+
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row" style="margin-top: 90px;">
+              <div class="col-md-4">
+                </html> <img src="img/carousel4.webp" class="d-block w-100" alt="Image 1">
+
+              </div>
+              <div class="col-md-4">
+                </html> <img src="img/carousel5.webp" class="d-block w-100" alt="Image 1">
+
+              </div>
+              <div class="col-md-4">
+                </html> <img src="img/carousel6.webp" class="d-block w-100" alt="Image 1">
+
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row" style="margin-top: 90px;">
+              <div class="col-md-4">
+                </html> <img src="img/carousel7.webp" class="d-block w-100" alt="Image 1">
+
+              </div>
+              <div class="col-md-4">
+                </html> <img src="img/carousel8.webp" class="d-block w-100" alt="Image 1">
+
+              </div>
+              <div class="col-md-4">
+                </html> <img src="img/carousel9.webp" class="d-block w-100" alt="Image 1">
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <div class="container">
+        <div class="row" style="margin-top: 70px;">
+            <div class="col-md-4">
+                <img src="img/img4.webp" class="img-fluid" alt="Image">
+            </div>
+            <div class="col-md-8" style=" align-self: center;">
+                <h2 style="color: #fff;">Tony Tropea, DC</h2>
+                <p  style="color: #fff;">Chiropractor located in Downtown Sunnyvale, Sunnyvale, CA</p>
+                <p  style="color: #fff;">Tony Tropea, DC, is a kind and dedicated chiropractor providing gentle, effective care to men, women, and children in Downtown Sunnyvale, California. As the founder of Tropea Chiropractic Inc., Dr. Tropea has brought together top-notch providers to offer patients the best and most personalized care for their pain and health challenges</p>
+                <button class="custom-button">Read More</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <h2 class="text-center testimonialheading" style="position: relative;">What our customers say</h2>
+        <div class="row"  style="padding-top: 30px;">
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="testimonial-box text-center" >
+                    <img src="img/dp1.png" class="rounded-circle " alt="Customer 1" >
+                    
+                        <h5 class="mt-0">Himansu S. Das</h5>
+                        <p>2 months ago on</p>
+                   
+                    <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <!-- Repeat the above code for other testimonial boxes -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="testimonial-box text-center">
+                    <img src="img/dp1.png" class="rounded-circle" alt="Customer 8">
+                    <h5 class="mt-3">John Doe</h5>
+                    <p>1 year ago on</p>
+                    <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="testimonial-box text-center">
+                    <img src="img/dp1.png" class="rounded-circle" alt="Customer 8">
+                    <h5 class="mt-3">John Doe</h5>
+                    <p>1 year ago on</p>
+                    <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="testimonial-box text-center">
+                    <img src="img/dp1.png" class="rounded-circle" alt="Customer 8">
+                    <h5 class="mt-3">John Doe</h5>
+                    <p>1 year ago on</p>
+                    <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="testimonial-box text-center">
+                    <img src="img/dp1.png" class="rounded-circle  mr-3" alt="Customer 1" alt="Customer 1">
+                   
+                        <h5 class="mt-0">Himansu S. Das</h5>
+                        <p>2 months ago on</p>
+                
+                    <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <!-- Repeat the above code for other testimonial boxes -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="testimonial-box text-center">
+                    <img src="img/dp1.png" class="rounded-circle" alt="Customer 8">
+                    <h5 class="mt-3">John Doe</h5>
+                    <p>1 year ago on</p>
+                    <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="testimonial-box text-center">
+                    <img src="img/dp1.png" class="rounded-circle" alt="Customer 8">
+                    <h5 class="mt-3">John Doe</h5>
+                    <p>1 year ago on</p>
+                    <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="testimonial-box text-center">
+                    <img src="img/dp1.png" class="rounded-circle" alt="Customer 8">
+                    <h5 class="mt-3">John Doe</h5>
+                    <p>1 year ago on</p>
+                    <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    </div>
+    <div class="text-center mt-4 " style=" background-color: rgba(255, 255, 255, 0.1); padding-bottom: 30px;">
+        <button class="button loadmorebutton">Load more</button>
+      </div>
+</section>
+
+<section class="contact-section" style="  padding-top: 70px;">
+    <div class="container">
+      <h2 class="contactheading" >CONTACT US TODAY</h2>
+      <p class="contactsub">We look forward to hearing from you</p>
+      <form>
+        <div class="form-group">
+          
+          <input type="text" class="form-control" id="name" placeholder="Enter your name(Required)" required>
+        </div>
+        <div class="form-group">
+         
+          <input type="email" class="form-control" id="email" placeholder="Enter your email(Required)" required>
+        </div>
+        <div class="form-group">
+          
+            <input type="text" class="form-control" id="name" placeholder="(XXX)-XXX XXXX(Required)" required>
+          </div>
+        <div class="form-group">
+          
+          <textarea class="form-control" id="message" rows="5" placeholder="Note to the Doctor"></textarea>
+        </div>
+        <p class="contactinfo">Please do not submit any Protected Health Information (PHI).</p>
+        <button type="submit" class="btn btn-primary" >Submit</button>
+        
+        
+      </form>
+    </div>
+  </section>
+
+  <section class="map">
+    
+    
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.6264928812893!2d-122.03190482496167!3d37.37501383508857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb65d711844e5%3A0x2db88314b939bad6!2s260%20S%20Sunnyvale%20Ave%20%232%2C%20Sunnyvale%2C%20CA%2094086%2C%20USA!5e0!3m2!1sen!2sin!4v1685701580131!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+  </section>
+
+  <section class="footerlogo">
+    <div class="container" style="padding:10px">
+        <img src="img/footerlogo.webp" alt="">
+    </div>
+  </section>
+  <div class="footer">
+    COPYRIGHT © 2023 MH SUB I, LLC DBA IMATRIX | ADMIN LOG | IN PRIVACY POLICY | TERMS OF USE | HEALTH DISCLAIMER
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
 </body>
 </html>
