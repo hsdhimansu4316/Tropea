@@ -7,8 +7,11 @@
   <title>Tropea</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
   <link rel="stylesheet" type="text/css" href="tropea.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-jc1vckdwsjD3cVHBDiO9j4DnD8HZRKfkbII6jUvL2p5T+9T5mPl+jT2T8NYCeqPOt5KmPH2yfpZnyuH7MjLQZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   
 </head>
 <body>
@@ -19,7 +22,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <p class="brand-info">
+                <p class="brand-info  sticky-top">
                     <span class="number">(408) 329-9604</span>
                     <span class="brand"><img class="logo" src="logo.webp" alt="Zaqst Logo"></span>
                     <span class="address">260 S Sunnyvale Ave #2 <br>
@@ -30,38 +33,76 @@
     </div>
 
   <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light  ">
-        <div class="container">
-            <ul class="navbar-nav mx-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
-                </li>
-        
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Chiropractic Services</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">Auto Accident Treatment</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">New Patient Center</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Resources</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="container">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">About Us <span class="dropdown-toggle"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">MEET THE DOCTOR</a></li>
+                    <li><a href="#">TESTIMONIALS</a></li>
+                   
+                </ul>
+            </li>
+    
+            <li class="nav-item">
+                <a class="nav-link" href="#">Chiropractic Services <span class="dropdown-toggle"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">BACK PAIN</a></li>
+                    <li><a href="#">CHIROPRACTIC CARE</a></li>
+                    <li><a href="#">COMMON AIRBAG AND SEATBELT INJURY</a></li>
+                    <li><a href="#">CONCUSSION</a></li>
+                    <li><a href="#">HEADACHE</a></li>
+                    <li><a href="#">HEADACHE AFTER A CAR ACCIDANTE</a></li>
+                    <li><a href="#">HERNIATED DISCS</a></li>
+                    <li><a href="#">KNEE PAIN</a></li>
+                    <li><a href="#">LIFESTYLE AND NUTRITIONAL ADVICE</a></li>
+                    <li><a href="#">LOWER BACK PAIN</a></li>
+                    <li><a href="#">NECK PAIN</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Auto Accident Treatment <span class="dropdown-toggle"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">AUTO ACCIDENT FAQS</a></li>
+                   
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">New Patient Center <span class="dropdown-toggle"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Forms</a></li>
+                    <li><a href="#">Insurance Information</a></li>
+                    <li><a href="#">Payment Options</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Resources <span class="dropdown-toggle"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact <span class="dropdown-toggle"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Email</a></li>
+                    <li><a href="#">Call</a></li>
+                    <li><a href="#">WhatsApp</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
     <div class="headi">
-        <h2>Supporting Spinal Health.
+        <h2 style="position: relative;">Supporting Spinal Health.
         </h2>
         <div class="line"></div>
-            <div class="hea"> <h3>You've only got one spine. Take great care of it with supportive chiropractic care.</h3>
+            <div class="hea" style="position: relative;"> <h3>You've only got one spine. Take great care of it with supportive chiropractic care.</h3>
         </div>
     </div>
+    <button class="custom-button" style="position: relative;">REQUEST APPOINTMENT</button>
 </section>
 <section class="second-section" >
     <div class="container">
@@ -79,10 +120,10 @@
                     </p>
                     <p class="sec2para">At Tropea Chiropractic Inc, we are fully dedicated to providing chiropractic solutions to address your unique needs, whether you are experiencing back pain, neck pain, headaches, or even muscle tightness and tension. Dr. Tropea welcomes you to our practice where we strive to make patients feel at home. This personal care is why people throughout the Sunnyvale area come to Tropea Chiropractic Inc.</p>
                 </div>
-                <a href="" style="padding-top: 50px; align-items: center;"><button class="custom-button" >MEET OUR DOCTOR</button></a>
             </div>
         </div>
-        <div class="row">
+        <button class="custom-button" style="position: relative;">MEET OUR DOCTOR</button>
+        <div class="row" style="padding-top: 80px;">
             <div class="col-md-5">
                 <div class="image-grid">
                     <!-- Image Grid Content Here -->
@@ -95,43 +136,38 @@
         </div>
     </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <!-- <div class="box"> -->
-                <div class="box border-right">
-                    <!-- <i class="fa fa-icon"></i> -->
-                    <!-- <i class='fas fa-male' style='font-size:36px'></i> -->
-                    <p class="box-text">Spinal Decompression</p>
+    
+        <div class="row" >
+            <div class="col-md-4 clrbth border-right">
+                <div class="box " >
+                    <i class="fa-solid fa-car  boxicon">
+                    <span class="icontext">   <p class="box-text">Spinal Adjustment</p></span></i>
                 </div>
-                <!-- </div> -->
             </div>
-            <div class="col-md-4">
-                <!-- <div class="box"> -->
-                <div class="box border-right">
-                    <i class='fas fa-car-alt' style='font-size:36px'></i>
-                    <p class="box-text">Auto Accident injury</p>
+            <div class="col-md-4 clrbth border-right">
+                <div class="box ">
+                    <i class="fa-solid fa-car  boxicon">
+                    <span class="icontext">   <p class="box-text">Spinal Adjustment</p></span></i>
                 </div>
-            <!-- </div> -->
             </div>
-            <div class="col-md-4">
-                <div class="box">
-                    <i class="fa fa-icon"></i>
-                    <p class="box-text">Spinal Adjustment</p>
+            <div class="col-md-4 clrbth border-right">
+                <div class="box ">
+                    <i class="fa-solid fa-car  boxicon">
+                    <span class="icontext">   <p class="box-text">Spinal Adjustment</p></span></i>
                 </div>
             </div>
         </div>
-    </div>
+    
 
     <div class="container">
-        <div class="row">
+        <div class="row" style="padding-top: 50px;">
             <div class="col-md-7">
                 <div class="content-text">
                     <h2 class="sec3heading"> A Second Opinion You Can  <br>Trust</h2>
                     <p class="sec3para" >Many of our patients come to us on strong pain medication seeking a way to avoid dangerous          surgeries.       In most cases, we can relieve your pain and restore mobility to pre-injury levels.
                     Every case is unique and starts with a full consultation; call us today to schedule an appointment.
                     </p>
-                    <h4 class="custom-heading">Heading with Hover Effect</h4>
+                    <button class="custom-button" >WATCH OUR VIDEO</button>
                 </div>
             </div>
             <div class="col-md-5">
@@ -231,10 +267,10 @@
             <div class="col-md-4">
                 <img src="img/img4.webp" class="img-fluid" alt="Image">
             </div>
-            <div class="col-md-8">
-                <h2>Tony Tropea, DC</h2>
-                <p>Chiropractor located in Downtown Sunnyvale, Sunnyvale, CA</p>
-                <p>Tony Tropea, DC, is a kind and dedicated chiropractor providing gentle, effective care to men, women, and children in Downtown Sunnyvale, California. As the founder of Tropea Chiropractic Inc., Dr. Tropea has brought together top-notch providers to offer patients the best and most personalized care for their pain and health challenges</p>
+            <div class="col-md-8" style=" align-self: center;">
+                <h2 style="color: #fff;">Tony Tropea, DC</h2>
+                <p  style="color: #fff;">Chiropractor located in Downtown Sunnyvale, Sunnyvale, CA</p>
+                <p  style="color: #fff;">Tony Tropea, DC, is a kind and dedicated chiropractor providing gentle, effective care to men, women, and children in Downtown Sunnyvale, California. As the founder of Tropea Chiropractic Inc., Dr. Tropea has brought together top-notch providers to offer patients the best and most personalized care for their pain and health challenges</p>
                 <button class="custom-button">Read More</button>
             </div>
         </div>
@@ -242,8 +278,8 @@
 
 
     <div class="container">
-        <h2 class="text-center testimonialheading">What our customers say</h2>
-        <div class="row"  style="margin-top: 90px;">
+        <h2 class="text-center testimonialheading" style="position: relative;">What our customers say</h2>
+        <div class="row"  style="padding-top: 30px;">
             <div class="col-md-6 col-lg-3 mb-4">
                 <div class="testimonial-box text-center" >
                     <img src="img/dp1.png" class="rounded-circle " alt="Customer 1" >
@@ -387,6 +423,7 @@
 <section class="contact-section" style="  padding-top: 70px;">
     <div class="container">
       <h2 class="contactheading" >CONTACT US TODAY</h2>
+      <p class="contactsub">We look forward to hearing from you</p>
       <form>
         <div class="form-group">
           
@@ -404,20 +441,31 @@
           
           <textarea class="form-control" id="message" rows="5" placeholder="Note to the Doctor"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-        <h2 class="custom-heading">Heading with Hover Effect</h2>
+        <p class="contactinfo">Please do not submit any Protected Health Information (PHI).</p>
+        <button type="submit" class="btn btn-primary" >Submit</button>
+        
+        
       </form>
     </div>
   </section>
 
   <section class="map">
-    <div class="container">
-      <h2>Location</h2>
+    
+    
       <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="https://www.google.com/maps/place/Patia,+Bhubaneswar,+Odisha/@20.3513926,85.8242418,14z/data=!3m1!4b1!4m6!3m5!1s0x3a190912b69339ab:0xa11e7186a04f1474!8m2!3d20.3532772!4d85.8265977!16s%2Fg%2F1vzn3zsh?entry=ttu" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.6264928812893!2d-122.03190482496167!3d37.37501383508857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb65d711844e5%3A0x2db88314b939bad6!2s260%20S%20Sunnyvale%20Ave%20%232%2C%20Sunnyvale%2C%20CA%2094086%2C%20USA!5e0!3m2!1sen!2sin!4v1685701580131!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
+
+  </section>
+
+  <section class="footerlogo">
+    <div class="container" style="padding:10px">
+        <img src="img/footerlogo.webp" alt="">
     </div>
   </section>
+  <div class="footer">
+    COPYRIGHT © 2023 MH SUB I, LLC DBA IMATRIX | ADMIN LOG | IN PRIVACY POLICY | TERMS OF USE | HEALTH DISCLAIMER
+</div>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>

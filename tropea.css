@@ -2,6 +2,7 @@
     .banner {
       position: relative;
       height: 100vh;
+     
       background-image: url("img/banner.jpg");
       background-size: cover;
       background-position: center;
@@ -14,8 +15,17 @@
       left: 0;
       right: 0;
       bottom: 0;
-      /* background-color: rgba(39, 35, 35, 0.5);  */
-      /* Adjust the transparency here */
+      
+    }
+    .banner::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #9a33e9; /* Change the background color here */
+      opacity: 0.2; /* Adjust the opacity if needed */
     }
 
     .brand {
@@ -35,6 +45,19 @@
       justify-content: center;
       align-items: center;
     }
+    /* .brand-info {
+      position: sticky;
+      top: 0;
+      background-color: #ffffff;
+      z-index: 999;
+  }
+   */
+  /* Sticky navbar */
+  /* .navbar.sticky-top {
+      position: sticky;
+      top: 0;
+      z-index: 998;
+  } */
 
     .brand-info span {
       margin-left: 10px;
@@ -64,6 +87,45 @@
         font-size: 16px;
         font-weight: 700;
     }
+
+
+    .navbar-nav .nav-item {
+      position: relative;
+  }
+  .navbar-nav .nav-item:hover .dropdown-menu {
+    display: block;
+}
+.navbar-nav .nav-item .dropdown-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: #6715AB;
+}
+.navbar-nav .nav-item .dropdown-menu a {
+  color: #f2f2f2;
+  padding: 8px 16px;
+  display: block;
+  text-decoration: none;
+}
+.navbar-nav .nav-item .dropdown-menu a:hover {
+  background-color: #b4adad;
+  padding: 4px 6px;
+}
+
+.dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 5px;
+  vertical-align: middle;
+  content: "";
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  padding: 3px;
+  transform: rotate(45deg);
+}
+
+
+
     .headi h2 {
       font-size: 56px;
       font-weight: 700;
@@ -97,6 +159,16 @@
       background-size: cover;
       background-position: center;
       text-align: center;
+    }
+    .second-section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #fff; /* Change the background color here */
+      opacity: 0.8; /* Adjust the opacity if needed */
     }
     .imgsec2
     {
@@ -134,18 +206,55 @@
     padding: 20px;
     text-align: center;
     transition: background-color 0.3s ease;
+    
+  }
+  .col-md-4.clrbth{
+    padding: 0px !important;
+    height: 100%;
+    padding: 1.875rem 0;
+  }
+  .clrbth :hover
+  {
+    background-color: #6715AB;
+    
+  }
+  .box i {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .box:hover
+  {
+    border: 6px solid  #b768f7;
   }
 
-  .box:hover {
-    background-color: #eaeaea;
+  .icontext
+  {
+    text-align: center;
+    font-family: lato-regular,Arial Black,Arial,Helvetica,sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    display: block;
+    
+    
   }
-
-  .box-text {
-    margin-top: 10px;
+  .boxicon
+  {
+    font-size: 45px;
+    color:#6715AB ;
   }
    .border-right {
-    border-right: 2px solid #000;
+    border-right: 6px solid #000;
   }
+  .box-text
+  {
+    color: #6715AB;
+  }
+  .box:hover i,
+  .box:hover p {
+    color: #fff;
+  }
+  
   .imgsec3
   {
     margin-right: -158px;
@@ -166,15 +275,16 @@
     font-size: 16px;
     font-weight: 400;
     text-align: left;
-    color: #fff;
+    color: #212529;;
   }
-  .section-third
+  /* .section-third
     {
       background-image: url('img/bg2.jpg');
       position: relative;
       
 
-    }
+    } */
+
   .transition-btn {
     transition: background-color 0.3s ease;
   }
@@ -182,14 +292,9 @@
   .transition-btn:hover {
     background-color: #f0f0f0;
   }
-  .box:hover
-  {
-    background-color: #6715AB;
-  }
-  .box-text
-  {
-    color: #fff;
-  }
+ 
+ 
+
   .box2 {
     background-color: #6715AB;
     padding: 20px;
@@ -203,6 +308,16 @@
       background-size: cover;
       /* background-position: center; */
     
+  }
+  .section4::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #6715AB; /* Change the background color here */
+    opacity: 0.4; /* Adjust the opacity if needed */
   }
   .testimonial-box
   {
@@ -269,6 +384,16 @@
       background-position: center;
       text-align: center;
   }
+  .contact-section::before {
+    content: "";
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #6715AB; /* Change the background color here */
+    opacity: 0.4; /* Adjust the opacity if needed */
+  }
   .contactheading
   {
     letter-spacing: -.6px;
@@ -280,9 +405,18 @@
    
 
   }
+  .contactsub
+  {
+    color: #fff;
+    text-align: left;
+    letter-spacing: 1px;
+    font-family: Nunito Sans,sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+  }
   .custom-heading {
-    background-color: blue;
-    box-shadow: 8px 8px 8px green;
+    background-color: #007bff;
+    box-shadow: 8px 8px 8px #6610f2;
     color: white;
     padding: 5px;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -293,17 +427,42 @@
     box-shadow: none;
   }
   .custom-button {
-    background-color: blue;
+    background-color: #007bff;
     color: white;
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
     border: none;
-    box-shadow: 0px 2px 4px green;
+    box-shadow: 0px 8px 12px #6610f2;
     transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
+    padding: 8px 52px;
+    font-family: DM Serif Text,serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding: 8px 52px;
+    font-size: 18px;
+   
   }
   
   .custom-button:hover {
     transform: translateY(5px);
     box-shadow: none;
   }
-  
+  .contactinfo
+  {
+    font-family: Nunito Sans,sans-serif;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+  }
+  .footer {
+    background-color: #6715AB;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    
+}
+ 
