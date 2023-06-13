@@ -1,29 +1,35 @@
-import logo from "./logo.svg";
 import "./App.css";
-import Header from "./components/Header";
-import Header1 from "./components/Header1";
 import About from "./components/About";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
-import BannerSlider from "./components/header/BannerSlider";
-import Banner from "./components/banner/Banner";
-import Carouselsection from "./components/Carouselsection";
-import Map from "./components/Map";
-import Navbar from "./components/Navbar";
+import Header from "./components/Header";
 import ContactUs from "./components/ContactUs";
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Page from "./components/page/Page";
 function App() {
   return (
     <>
-       
-    {/* <Header1 /> */}
-      {/* <Header /> */}
-      <Banner/>
-      <Home />
-      {/* <About />*/}
-      <ContactUs/>
-      <Map/>
-      <Footer />
+      <Router>
+        <Header />
+        <Routes>
+          <Route
+            path="/"
+            element={<Home />}
+          />
+          {/* <Route
+            path="/about"
+            element={<About />}
+          /> */}
+          <Route
+            path=":pages"
+            element={<Page />}
+          />
+          {/* <About />*/}
+        </Routes>
+        <ContactUs />
+        {/* <Map /> */}
+        <Footer />
+      </Router>
     </>
   );
 }

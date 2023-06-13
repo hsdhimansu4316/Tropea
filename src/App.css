@@ -7,6 +7,15 @@
   --error: #ff0000;
   --success: #4caf50;
 }
+/* a {
+  color: #0384d7 !important;
+} */
+.cta__button {
+  color: #0384d7 !important;
+}
+.component__button--1 {
+  color: #0384d7 !important;
+}
 #id_7c9a10a3-8c9e-562a-b390-cfac6e3ff054 {
   background-image: url("https://cdcssl.ibsrv.net/ibimg/smb/3000x3000_80/webmgr/1n/7/p/images/stacked-background.jpg.webp");
 }
@@ -250,4 +259,14 @@ body #COVID19 .covid-close-link:hover {
     top: 50%;
     transform: translateY(-50%);
   }
+}
+
+.section--light .component__button--1 {
+  color: #fff;
+  border: 1px solid #0384d7 !important;
+  color: #fff !important;
+  background-color: #0384d7 !important;
+}
+.section--light .component__button--1:hover {
+  transform: translate(0px, 0px) !important;
 }

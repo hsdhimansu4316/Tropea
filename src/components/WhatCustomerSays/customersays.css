@@ -1,9 +1,7 @@
-.testimonial-box
-{
+.testimonial-box {
   background-color: rgb(251, 252, 251);
 }
-.rounded-circle
-{
+.rounded-circle {
   position: relative;
   width: 40px;
   height: 40px;
@@ -11,8 +9,7 @@
   border-radius: 50%;
   overflow: hidden;
 }
-.testimonial-box
-{
+.testimonial-box {
   position: relative;
   transition: background-color 0.1s ease 0s;
   box-sizing: border-box;
@@ -22,46 +19,45 @@
   border-radius: 34px;
   background-color: rgba(255, 255, 255, 0.1);
 }
-.testimonial-box h5{
+.testimonial-box h5 {
   color: #fff;
-  font-family: lato-regular,Arial Black,Arial,Helvetica,sans-serif;
+  font-family: lato-regular, Arial Black, Arial, Helvetica, sans-serif;
   font-size: 1rem;
 }
-.testimonial-box p{
-  color:#fff ;
+.testimonial-box p {
+  color: #fff;
 }
-.test-head{
-margin-right: 30px;
-margin-bottom: 50px;
+.test-head {
+  margin-right: 30px;
+  margin-bottom: 50px;
 }
-.checked
-{
+.checked {
   color: orange;
 }
-.testimonialheading
-{
+.testimonialheading {
   line-height: 1.32;
   font-size: 24px;
   font-weight: bold;
   font-style: normal;
   color: rgb(255, 255, 255);
 }
-.loadmorebutton
-  {
-    padding: 8px 51px;
-    background-color: rgba(180, 23, 23, 0);
-    color: #fff;
-  }
-  .contactinfo
-  {
-    font-family: Nunito Sans,sans-serif;
-    margin-bottom: 0.5rem;
-    font-weight: 400;
-    font-size: 16px;
-    text-align: center;
-    color: #fff;
-  }
-  .button-container {
-    display: flex;
-    justify-content: center;
-  }
+.loadmorebutton {
+  padding: 8px 51px;
+  background-color: rgba(180, 23, 23, 0);
+  color: #fff;
+}
+.contactinfo {
+  font-family: Nunito Sans, sans-serif;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+.cta__buttn {
+  color: black !important;
+}

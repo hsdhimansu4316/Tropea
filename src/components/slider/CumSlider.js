@@ -1,8 +1,8 @@
-import React from 'react';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import './Slider.css';
+import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "./Slider.css";
 
 const CumSlider = () => {
   const settings = {
@@ -11,7 +11,7 @@ const CumSlider = () => {
     speed: 300,
     slidesToShow: 3,
     slidesToScroll: 1,
-    arrows:true,
+    arrows: true,
     autoplay: true,
     autoplaySpeed: 2000,
     responsive: [
@@ -37,51 +37,62 @@ const CumSlider = () => {
         },
       },
     ],
-
   };
 
   return (
     <div className="container">
-    <Slider {...settings}>
-    <div className='card-menu'>
-      <div className="card  " >
-        <img src="img/carousel1.webp" alt="Image 1" />
-        
-      </div>
-      </div>
-      <div className='card-menu'>
-      <div className="card  ">
-        <img src="img/carousel2.webp" alt="Image 2" />
-        
-      </div>
-      </div>
-      <div className='card-menu'>
-      <div className="card  ">
-      <img src="img/carousel3.webp" alt="Image 3" />
-      
-    </div>
-    </div>
-    <div className='card-menu'>
-    <div className="card  ">
-    <img src="img/carousel4.webp" alt="Image 4" />
-    
-  </div>
-  </div>
-  <div className='card-menu'>
-  <div className="card ">
-  <img src="img/carousel5.webp" alt="Image 5" />
- 
-</div>
-</div>
-<div className='card-menu'>
-<div className="card  ">
-<img src="img/carousel6.webp" alt="Image 6" />
+      <Slider {...settings}>
+        <div className="card-menu">
+          <div className="card  ">
+            <img
+              src="img/carousel1.webp"
+              alt="Image 1"
+            />
+          </div>
+        </div>
+        <div className="card-menu">
+          <div className="card  ">
+            <img
+              src="img/carousel2.webp"
+              alt="Image 2"
+            />
+          </div>
+        </div>
+        <div className="card-menu">
+          <div className="card  ">
+            <img
+              src="img/carousel3.webp"
+              alt="Image 3"
+            />
+          </div>
+        </div>
+        <div className="card-menu">
+          <div className="card  ">
+            <img
+              src="img/carousel4.webp"
+              alt="Image 4"
+            />
+          </div>
+        </div>
+        <div className="card-menu">
+          <div className="card ">
+            <img
+              src="img/carousel5.webp"
+              alt="Image 5"
+            />
+          </div>
+        </div>
+        <div className="card-menu">
+          <div className="card  ">
+            <img
+              src="img/carousel6.webp"
+              alt="Image 6"
+            />
+          </div>
+        </div>
 
-</div>
-</div>
-
-      {/* Add more cards here */}
-    </Slider>
+        {/* Add more cards here */}
+      </Slider>
     </div>
   );
 };
